@@ -1,0 +1,56 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "PlatformIO",
+			"task": "Build (hifive1-revb)",
+			"problemMatcher": [
+				"$platformio"
+			],
+			"group": "build",
+			"label": "PlatformIO: Build (hifive1-revb)"
+		},
+		{
+			"type": "PlatformIO",
+			"task": "Build",
+			"problemMatcher": [
+				"$platformio"
+			],
+			"group": "build",
+			"label": "PlatformIO: Build"
+		},
+		{
+			"type": "PlatformIO",
+			"task": "Test (hifive1-revb)",
+			"problemMatcher": [
+				"$platformio"
+			],
+			"group": "test",
+			"label": "PlatformIO: Test (hifive1-revb)"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: riscv64-unknown-elf-gcc.exe build active file",
+			"command": "C:/Users/ragha/.platformio/packages/toolchain-riscv/bin/riscv64-unknown-elf-gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-march=rv32imac",
+				"-mabi=ilp32",
+				"-mcmodel=medlow",
+				""
+			],
+			"options": {
+				"cwd": "C:/Users/ragha/.platformio/packages/toolchain-riscv/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:/Users/ragha/.platformio/packages/toolchain-riscv/bin/riscv64-unknown-elf-gcc.exe"
+		}
+	]
+}
